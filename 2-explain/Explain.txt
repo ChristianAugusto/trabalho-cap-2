@@ -1,0 +1,43 @@
+Foram criados dois tipos para organização dos dados:
+
+Livro:
+
+• ISBN (13 dígitos)         <- Vetor de char[14]
+• Título (200 carácteres)   <- Vetor de char[201]
+• Editora (100 carácteres)  <- Vetor de char[101]
+• Ano                       <- int
+• Total de exemplares       <- int
+• Exemplares emprestados    <- int
+• Exemplares disponíveis    <- int
+
+Aluno:
+• RA (8 dígitos)            <- Vetor de char[9]
+• Nome (100 carácteres)     <- Vetor de char[101]
+• Curso (50 carácteres)     <- Vetor de char[51]
+• E-mail (100 carácteres)   <- Vetor de char[101]
+• Empréstimos realizados    <- int
+• Empréstimos atrasados     <- int
+
+Tipo emprestimo:
+// • id                  Automatico, auto incrementável    <- long int
+• tempo               Ler do teclado                    <- long int
+• data do emprestimo  Calcular em tempo                 <- long int
+• RA aluno            Ler do teclado                    <- long int
+• ISBN livro          Ler do teclado                    <- long int
+• emprestimo atrasado                                   <- int (1: true, 0: false)
+
+
+Sistema Emails:
+sudo apt-get install sendemail
+
+sendemail -f bibliotecaunasp.cap2@gmail.com -t christianbetta@gmail.com -u "Emprestimo de livro em atraso" -m "O emprestimo do livro ISBN: x Titulo: x esta atrasado" -s smtp.gmail.com:587 -xu bibliotecaunasp.cap2@gmail.com -xp bibliotecaunasp1#@capii
+
+469 caracteres maximos do comando
+
+312 caracteres email
+
+Email:
+bibliotecaunasp.cap2@gmail.com
+
+senha:
+bibliotecaunasp1#@capii

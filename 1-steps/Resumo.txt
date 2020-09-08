@@ -1,0 +1,60 @@
+Objetivos gerais:
+
+1- Sistema capaz de controlar todos os livros que estão presentes na biblioteca;
+2- Manter o registros de todos os livros que foram emprestados e por quanto tempo eles foram emprestados.
+
+
+
+
+No momento de cadastramento de um livro, o bibliotecário deve informar:
+• ISBN (13 dígitos)         <- long int
+• Título (200 carácteres)   <- Vetor de char[201]
+• Editora (100 carácteres)  <- Vetor de char[101]
+• Ano                       <- int
+• Total de exemplares       <- int
+
+(Ações informadas posteriormente por cálculos)
+• Exemplares emprestados    <- int
+• Exemplares disponíveis    <- int
+
+
+
+
+No momento de cadastramento dos alunos, deve ser informado:
+• RA (8 dígitos)            <- long int
+• Nome (100 carácteres)     <- Vetor de char[101]
+• Curso (50 carácteres)     <- Vetor de char[51]
+• E-mail (100 carácteres)   <- Vetor de char[101] (i) Verificar formato do email. Precisa conter um '@' e após o '@' conter '.';
+
+(Ações informadas posteriormente)
+• Empréstimos realizados    <- int
+• Empréstimos atrasados     <- int
+
+
+
+Aluno:
+-> Cadastrar aluno   * Validar RA
+-> Remover aluno por RA
+-> Listar alunos
+OBS: Não cadastrar alunos com o mesmo RA
+
+
+Livro:
+-> Cadastrar livro   * Validar ISBN
+-> Remover livro por ISBN
+-> Listar livros
+OBS: Não cadastrar livros com o mesmo ISBN
+
+
+Empréstimo:
+-> Ler isbn do livro  ->  Validar se existe livro disponível
+-> Ler ra do aluno    ->  Validar se existe empréstimo em atraso com o aluno
+-> Ler o tempo em dias do empréstimo
+-> Guardar a data do emprestimo feito
+
+Funcionalidades:
+-> Listar empréstimos
+
+
+Bônus:
+Enviar um e-mail para os alunos que estão com livro em atraso

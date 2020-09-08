@@ -1,0 +1,4 @@
+1          luana_simoes_de_campos                             enfermagem                luana.simoes@gmail.com         0  0 
+2          nikolas_henrique_santos_leite                      ciencia_da_computacao     nikolassantosleite@gmail.com   0  0 
+5          taina_simoes_de_campos                             direito                   taina.simoes@gmail.com         0  0 
+12084      christian_augusto_martins_dos_santos_barros        ciencia_da_computacao     christianbetta@gmail.com       0  0 
